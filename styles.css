@@ -1,0 +1,9 @@
+ * {
+      scroll-behavior: smooth;
+    }
+
+    #phone-no::-webkit-inner-spin-button,
+    #phone-no::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    } 
