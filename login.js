@@ -6,7 +6,7 @@ form.addEventListener("submit", function(e) {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  // Change this to your own credentials
+  // Admin credentials
   if (username === "muffins" && password === "fola123") {
     localStorage.setItem("isAdmin", "true");
     window.location.href = "admin.html";
