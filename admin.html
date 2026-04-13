@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - IQ Photos</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: "#C9A96E"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-black text-white p-6">
+
+  <h1 class="text-3xl font-bold mb-6">Admin Dashboard</h1>
+
+  <!-- BOOKINGS SECTION -->
+  <div>
+    <h2 class="text-2xl mb-4">Bookings</h2>
+
+    <div id="bookingList" class="space-y-4">
+      <!-- JS will insert bookings here -->
+    </div>
+  </div>
+
+  <h2 class="text-2xl mt-10 mb-4">Manage Gallery</h2>
+
+<input type="file" id="imageInput" class="mb-4">
+
+<button onclick="uploadImage()" class="bg-gold text-black px-4 py-2 rounded hover:bg-gold/80 transition duration-300">
+  Upload Image
+</button>
+
+<div id="imageList" class="grid grid-cols-3 gap-4 mt-6"></div>
+
+
+
+
+  <!-- LOGOUT BUTTON -->
+  <div class="mt-6">
+    <button onclick="logout()" class="bg-red-600 px-4 py-2 rounded hover:bg-red-700 transition duration-300">
+      Logout
+    </button>
+  </div>
+
+<script src="admin.js"></script>
+</body>
+</html>
