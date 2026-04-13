@@ -7,7 +7,7 @@ form.addEventListener("submit", function(e) {
   const password = document.getElementById("password").value;
 
   // Admin credentials
-  if (username === "muffins" && password === "fola123") {
+  if (username === "Muffins" && password === "fola123") {
     localStorage.setItem("isAdmin", "true");
     window.location.href = "admin.html";
   } else {
